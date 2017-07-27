@@ -1,23 +1,31 @@
----
-layout: default
----
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <TITLE>Shadowplay</TITLE>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <LINK rel="stylesheet" type="text/css" href="website.css" />
+    </head>
+    
+    <BODY>
+      <header class="container">
+    <div class="row">
+      <h1 class="col-sm-8">Shadowplay</h1>
+      <nav class="col-sm-4">
+        <p>About</p>
+        <p>Search</p>
+        <p>Current Games</p>
+      </nav>
+    </div>
+   </header>
+<section class="jumbotron">
+    <div class="container">
+      <div class="row text-center">
+        <h2>Shadowplay</h2>
+        <h3>The home of DMsShadow's many projects</h3>
+        <a class="btn btn-primary" href="#">See all</a>
+      </div>
+    </div>
+  </section>
+    </BODY>
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+</HTML>
