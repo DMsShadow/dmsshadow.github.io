@@ -21,11 +21,15 @@ body {
   height: 100%;
   margin: 0;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+  background-color: #000; }
 
 h1 {
   font-size: 32px;
   font-family: Palatino, 'Palatino Linotype', serif;
   color: gold; }
 
-/*# sourceMappingURL=website.css.map */
+nav {
+  color: #fff; }
+
+/*# sourceMappingURL=main.css.map */
