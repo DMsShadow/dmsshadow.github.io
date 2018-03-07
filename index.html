@@ -4,6 +4,46 @@
         <TITLE>Shadowplay</TITLE>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <LINK rel="stylesheet" type="text/css" href="css/main.css" />
+        <style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
     </head>
     
     <BODY>
@@ -57,8 +97,11 @@
                     <div class="col-sm-3"> 
                         <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
                     </div>
-                    <div class="col-sm-3"> 
+                    <div class="col-sm-3">
                         <img src="img/phoenix.jpg" class="img-responsive" style="width:100%" alt="Image">
+                        <div class="overlay">
+                           <div class="text">Phoenix BSE</div>
+                        </div>
                     </div>
                     <div class="col-sm-3">
                         <img src="img/openlegend.jpg" class="img-responsive" style="width:100%" alt="Image">
